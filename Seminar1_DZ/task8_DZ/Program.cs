@@ -11,21 +11,20 @@ int N = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(); // выводит доп. пустую строку
 int count = 1;
 if (N>0)
-{
-Console.Write($"Ряд четных чисел от 1 до {N}: ");
-while (count <=N)
     {
-        if (count%2==0)
-            {
-                Console.Write($"{count} ");
-            }
-    count++;
+        Console.Write($"Ряд четных чисел от 1 до {N}: ");
+            while (count <=N)
+                {
+                    if (count%2==0)
+                        {
+                            Console.Write($"{count} ");
+                        }
+                count++;
+                }
+        Console.WriteLine(); // выводит доп. пустую строку
     }
-    Console.WriteLine(); // выводит доп. пустую строку
-}
 else
-{
-    Console.WriteLine($"Введеное число = {N}. Условия программы не соблюдены."); 
-    Console.WriteLine($"Выполните программу еще раз, введя число больше {N}.");
-    Console.WriteLine(); // выводит доп. пустую строку
-}    
+    {
+        Console.WriteLine($"Введеное число = {N}. Условия программы не соблюдены."); 
+        Console.WriteLine($"Выполните программу еще раз, введя число больше 0.");
+    }    
