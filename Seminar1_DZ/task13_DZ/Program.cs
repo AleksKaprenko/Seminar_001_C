@@ -18,6 +18,9 @@ void PrintThirdDigit(string num)
 
 
 Console.Write("Введите 3-значное число: ");
-string N = Console.ReadLine();
+string? N = Console.ReadLine();
+if (N!=null)
+{
 N = String.Join("", N.Split('-', ',' ,'.'));
 PrintThirdDigit(N);
+}
