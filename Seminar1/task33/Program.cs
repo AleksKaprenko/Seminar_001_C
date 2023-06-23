@@ -51,6 +51,6 @@ for (int i = 0; i < array.Length; i++)
         isOk = "Элемент найден";
         break;
     }
-    else isOk=isOk;
+    else isOk="Элемент НЕ найден";
 }
 System.Console.WriteLine(isOk);
