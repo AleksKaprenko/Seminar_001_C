@@ -6,7 +6,7 @@
 */
 using System;
 Console.Write("Введите N-значное число: ");
-string number = Console.ReadLine();
+string? number = Convert.ToString(Convert.ToInt32(Console.ReadLine()));
 char[] array = number.ToCharArray();
 bool equalNumbers = false;
 for (int i=0; i<=array.Length/2; i++)
