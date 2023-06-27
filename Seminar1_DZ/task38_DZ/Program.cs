@@ -11,7 +11,8 @@ double minRange = -50; //  мин. граница генерируемых чи�
 double maxRange = 50; // макс. граница генерируемых чисел, задаем произвольно
 for (int i = 0; i<size; i++)
     {
-      array[i] = Math.Round((rnd.NextDouble() *(maxRange-minRange) + minRange), 2); // random в диапазоне (minRange, maxRange) с округлением до 2 знаков
+    //  array[i] = Math.Round((rnd.NextDouble() *(maxRange-minRange) + minRange), 2); // random в диапазоне (minRange, maxRange) с округлением до 2 знаков
+  array[i] = Math.Round((rnd.NextDouble() + rnd.Next(0, 10)), 2); // вариант 2
     }
     return array;
 }
