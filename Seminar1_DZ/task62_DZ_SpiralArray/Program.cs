@@ -6,7 +6,7 @@
 10 09 08 07
 */
 
-void FillMatrixWithRandom(int[,] matrix)
+void FillMatrixSpiral(int[,] matrix)
 {
     int step = 0; // начальное значение для циклов спирали по строкам матрицы
     int incrementalNumber = 1; // стартовое число для инкрементального спирального заполнения матрицы
@@ -69,7 +69,7 @@ int column = Convert.ToInt32(Console.ReadLine());
 int[,] matrix = new int[row, column];
 if (row*column !=0)
 {
-FillMatrixWithRandom(matrix);
+FillMatrixSpiral(matrix);
 PrintMatrix(matrix);
 }
 else System.Console.WriteLine("Необходимо вводить ненулевые размеры матрицы!");
