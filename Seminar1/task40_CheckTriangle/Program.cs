@@ -11,11 +11,11 @@ string CheckTriangle(int a, int b, int c)
 }
 
 System.Console.Write("Cторона треугольника a: ");
-int a = int.Parse(Console.ReadLine());
+int a = int.Parse(Console.ReadLine()!);
 System.Console.Write("Cторона треугольника b: ");
-int b = int.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine()!);
 System.Console.Write("Cторона треугольника c: ");
-int c = int.Parse(Console.ReadLine());
+int c = int.Parse(Console.ReadLine()!);
 // string result = $"Треугольник с длинами сторон {a}, {b}, {c} ";
 System.Console.WriteLine(CheckTriangle(a, b, c));
 //Console.ReadKey();
